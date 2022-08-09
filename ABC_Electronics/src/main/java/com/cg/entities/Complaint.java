@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Complaint {
 	@Column(name="complaint_id")
-	private @Id Integer complaintId;
+	private @Id int complaintId;
 	private String productModelNumber;
 	private String complaintName;
 	private String status;
@@ -19,7 +19,7 @@ public class Complaint {
 	}
 	
 
-	public Complaint(Integer complaintId, String productModelNumber, String complaintName, String status,String clientId, int engineerId) {
+	public Complaint(int complaintId, String productModelNumber, String complaintName, String status,String clientId, int engineerId) {
 		this.complaintId = complaintId;
 		this.productModelNumber = productModelNumber;
 		this.complaintName = complaintName;
@@ -33,7 +33,7 @@ public class Complaint {
 		return complaintId;
 	}
 
-	public void setComplaintId(Integer complaintId) {
+	public void setComplaintId(int complaintId) {
 		this.complaintId = complaintId;
 	}
 
