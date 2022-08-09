@@ -13,6 +13,5 @@ public interface IEngineerService {
     List<Complaint> getResolvedComplaintsByDate(Engineer e, LocalDate d);
     List<Complaint> getComplaints(Engineer e, String s);
     String changeComplaintStatus(int a);
-    
-
+ 
 }
