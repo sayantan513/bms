@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Engineer {
 	@Column(name="employee_Id")
-	private @Id Integer employeeId;
+	private @Id int employeeId;
 	private String password;
 	private String engineerName;
 	private String domain;
@@ -16,7 +16,7 @@ public class Engineer {
 		
 	}
 	
-	public Engineer(Integer employeeId, String password, String engineerName, String domain) {
+	public Engineer(int employeeId, String password, String engineerName, String domain) {
 		this.employeeId = employeeId;
 		this.password = password;
 		this.engineerName = engineerName;
@@ -28,7 +28,7 @@ public class Engineer {
 		return employeeId;
 	}
 
-	public void setEmployeeId(Integer employeeId) {
+	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
 
