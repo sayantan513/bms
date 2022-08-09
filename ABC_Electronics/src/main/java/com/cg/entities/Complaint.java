@@ -1,13 +1,15 @@
 package com.cg.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="complaint")
 public class Complaint {
-	@Column(name="complaint_id")
-	private @Id int complaintId;
+
+	@Id
+	private Integer complaintId;
 	private String productModelNumber;
 	private String complaintName;
 	private String status;
@@ -19,7 +21,7 @@ public class Complaint {
 	}
 	
 
-	public Complaint(int complaintId, String productModelNumber, String complaintName, String status,String clientId, int engineerId) {
+	public Complaint(Integer complaintId, String productModelNumber, String complaintName, String status,String clientId, int engineerId) {
 		this.complaintId = complaintId;
 		this.productModelNumber = productModelNumber;
 		this.complaintName = complaintName;
@@ -33,7 +35,7 @@ public class Complaint {
 		return complaintId;
 	}
 
-	public void setComplaintId(int complaintId) {
+	public void setComplaintId(Integer complaintId) {
 		this.complaintId = complaintId;
 	}
 
@@ -86,4 +88,3 @@ public class Complaint {
 	
 
 }
-
