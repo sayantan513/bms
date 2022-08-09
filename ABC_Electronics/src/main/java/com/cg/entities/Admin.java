@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Admin {
 	@Column(name="admin_id") 
-	private @Id Integer adminId;
+	private @Id int adminId;
 	private String password;
 	private long contactNumber;
 	private String emailId;
@@ -17,7 +17,7 @@ public class Admin {
 	}
 	
 
-	public Admin(Integer adminId, String password, long contactNumber, String emailId) {
+	public Admin(int adminId, String password, long contactNumber, String emailId) {
 		this.adminId = adminId;
 		this.password = password;
 		this.contactNumber = contactNumber;
@@ -29,7 +29,7 @@ public class Admin {
 		return adminId;
 	}
 
-	public void setAdminId(Integer adminId) {
+	public void setAdminId(int adminId) {
 		this.adminId = adminId;
 	}
 
