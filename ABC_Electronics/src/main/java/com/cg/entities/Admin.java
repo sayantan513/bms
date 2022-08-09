@@ -1,13 +1,15 @@
 package com.cg.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="admin")
 public class Admin {
-	@Column(name="admin_id") 
-	private @Id int adminId;
+	
+	@Id
+	private Integer adminId;
 	private String password;
 	private long contactNumber;
 	private String emailId;
@@ -17,7 +19,7 @@ public class Admin {
 	}
 	
 
-	public Admin(int adminId, String password, long contactNumber, String emailId) {
+	public Admin(Integer adminId, String password, long contactNumber, String emailId) {
 		this.adminId = adminId;
 		this.password = password;
 		this.contactNumber = contactNumber;
@@ -29,7 +31,7 @@ public class Admin {
 		return adminId;
 	}
 
-	public void setAdminId(int adminId) {
+	public void setAdminId(Integer adminId) {
 		this.adminId = adminId;
 	}
 
@@ -66,4 +68,3 @@ public class Admin {
 	
 
 }
-
