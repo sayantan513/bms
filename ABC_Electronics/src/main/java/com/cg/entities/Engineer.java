@@ -1,13 +1,15 @@
 package com.cg.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="engineer")
 public class Engineer {
-	@Column(name="employee_id")
-	private @Id int employeeId;
+	
+	@Id
+	private Integer employeeId;
 	private String password;
 	private String engineerName;
 	private String domain;
@@ -16,7 +18,7 @@ public class Engineer {
 		
 	}
 	
-	public Engineer(int employeeId, String password, String engineerName, String domain) {
+	public Engineer(Integer employeeId, String password, String engineerName, String domain) {
 		this.employeeId = employeeId;
 		this.password = password;
 		this.engineerName = engineerName;
@@ -28,7 +30,7 @@ public class Engineer {
 		return employeeId;
 	}
 
-	public void setEmployeeId(int employeeId) {
+	public void setEmployeeId(Integer employeeId) {
 		this.employeeId = employeeId;
 	}
 
@@ -64,3 +66,4 @@ public class Engineer {
 	
 
 }
+
