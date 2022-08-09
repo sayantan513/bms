@@ -8,7 +8,6 @@ import com.cg.entities.Engineer;
 import com.cg.entities.Product;
 import com.cg.entities.Complaint;
 
-@RestController
 public interface IComplaintService {
 
     
