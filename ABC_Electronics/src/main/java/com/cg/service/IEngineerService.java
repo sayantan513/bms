@@ -6,7 +6,7 @@ import java.util.List;
 import com.cg.entities.Complaint;
 import com.cg.entities.Engineer;
 
-public interface IEnginnerService {
+public interface IEngineerService {
     
     List<Complaint> getAllOpenComplaints(Engineer e);
     List<Complaint> getResolvedComplaints(Engineer e);
