@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cg.entities.Client;
 import com.cg.entities.Engineer;
 
-
-@RestController
 public interface IClientService {
 
     void saveClient(Client c);
