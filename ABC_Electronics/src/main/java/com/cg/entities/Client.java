@@ -1,13 +1,15 @@
 package com.cg.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="client")
 public class Client {
-	@Column(name="client_id")
-	private @Id String clientId;
+	
+	@Id
+	private  String clientId;
 	private String password;
 	private String address;
 	private long phoneNumber;
@@ -65,4 +67,3 @@ public class Client {
 	
 
 }
-
