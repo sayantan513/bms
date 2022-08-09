@@ -1,5 +1,9 @@
 package com.cg.repository;
 
-public interface IEngineerRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cg.entities.Engineer;
+
+public interface IEngineerRepository extends JpaRepository<Engineer,Integer> {
 
 }
