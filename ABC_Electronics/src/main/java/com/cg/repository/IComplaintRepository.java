@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.cg.entities.Complaint;
 
 @Repository
-public interface IComplaintRepository extends JpaRepository<Complaint,Integer>{
+public interface IComplaintRepository extends JpaRepository<Complaint, Integer>{
 
 }
